@@ -1,6 +1,6 @@
 {
   "name": "guacbui-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI for guacbui — a bulk user/group importer/rollback utility library for Apache Guacamole instances",
   "scripts": {
     "test": "xo"
