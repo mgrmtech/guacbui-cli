@@ -1,4 +1,8 @@
 ```
+$ npm install -g guacbui-cli
+```
+
+```
 Usage
   $ guacbui -g url -u username -p password -r
 
