@@ -1,0 +1,21 @@
+{
+  "name": "guacbui-cli",
+  "version": "1.0.0",
+  "description": "A CLI for guacbui — a bulk user/group importer/rollback utility library for Apache Guacamole instances",
+  "scripts": {
+    "test": "xo"
+  },
+  "author": "Sai Kishore K <sai@mgrm.tech>",
+  "license": "ISC",
+  "bin": {
+	  "guacbui": "index.js"
+  },
+  "devDependencies": {
+    "xo": "^0.25.3"
+  },
+  "dependencies": {
+    "guacbui": "^1.0.0",
+    "meow": "^6.0.0",
+    "puppeteer": "^2.0.0"
+  }
+}
