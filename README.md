@@ -1,30 +1,24 @@
+guacbui-cli is a command-line application for [guacbui](https://github.com/mgrmtech/guacbui) — a bulk user/group importer/rollback utility library for Apache Guacamole instances
+
+## Installation
 ```
 $ npm install -g guacbui-cli
 ```
+This will make the `guacbui` binary available across the terminal, which can be used as follows.
 
+## Usage
+
+- Import the data from "./data/template.xlsx" to the guacamole instance at http://guacamoleurl.com (download [this template](https://github.com/mgrmtech/guacbui/raw/master/example/template.xlsx) to know how the data in the excel file should be structured)
 ```
-Usage
-  $ guacbui -g url -u username -p password -r
+$ guacbui -g http://guacamoleurl.com -u admin -p password -x ./data/template.xlsx
+```
 
-NOTE
-  Please ensure that you've specified values for all of the required flags mentioned below!
+- Rollback any data imported from the above step
+```
+$ guacbui -g http://guacamoleurl.com -u admin -p admin -x ./data/template.xlsx -r
+```
 
-Required
-  --url, -g  Specify the url of the guacamole instance
-  --username, -u  Specify the username of an administrator with requisite privilieges
-  --password, -p  Specify the password of the administrator
-  --xlsx-path, -x  Specify the path of the XLSX file with the user/group-data to be imported
-
-Options
-  --rollback, -r  Rolls back any of the imported users/groups from the given data file
-
-Examples
-  // Import the data from "./data/template.xlsx"
-  $ guacbui -g http://guacamoleurl.com -u admin -p admin -x "./data/template.xlsx"
-
-  // Rollback any imported data from "./data/template.xlsx"
-  $ guacbui -g http://guacamoleurl.com -u admin -p admin -x "./data/template.xlsx" -r
-
-  // You can also use the following descriptive flag aliases
-  $ guacbui --url=http://guacamoleurl.com --username=admin --password=admin --xlsx-path="./data/template.xlsx" --rollback
+- The following descriptive flag aliases can be used instead of the short flags
+```
+$ guacbui --url=http://guacamoleurl.com --username=admin --password=password --xlsx-path=./data/template.xlsx --rollback
 ```
