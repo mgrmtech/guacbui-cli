@@ -8,7 +8,7 @@
   "author": "Sai Kishore K <sai@mgrm.tech>",
   "license": "ISC",
   "bin": {
-	  "guacbui": "index.js"
+    "guacbui": "index.js"
   },
   "devDependencies": {
     "xo": "^0.25.3"
