@@ -11,7 +11,7 @@
     "guacbui": "index.js"
   },
   "devDependencies": {
-    "xo": "^0.25.3"
+    "xo": "^0.51.0"
   },
   "dependencies": {
     "guacbui": "^1.0.0",
