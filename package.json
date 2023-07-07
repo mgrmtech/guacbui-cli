@@ -14,7 +14,7 @@
     "xo": "^0.25.3"
   },
   "dependencies": {
-    "guacbui": "^1.0.0",
+    "guacbui": "1.0.3",
     "meow": "^6.0.0",
     "puppeteer": "^2.0.0"
   }
